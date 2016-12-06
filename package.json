@@ -1,0 +1,26 @@
+{
+  "name": "catalogmovie",
+  "version": "0.1.0",
+  "description": "\u001b[2~\u001b[2~Catalog movie for resgistraion and serch",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeMTechnology/CatalogMovie.git"
+  },
+  "author": "Matheus José e Matheus Ferreira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MeMTechnology/CatalogMovie/issues"
+  },
+  "homepage": "https://github.com/MeMTechnology/CatalogMovie#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "getmodule": "^1.0.0",
+    "jquery": "^3.1.1"
+  }
+}

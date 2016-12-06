@@ -7,6 +7,79 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header>
+        <h1 class="col-md-offset-4">Add title</h1>
+    </header>
+    <div class="row">
+         <div role="main" class="col-md-8">
+             <form id="form-movie" class="form-horizontal">
+                 
+                 <div class="form-group">
+                      <label for="txName" class="col-md-3 control-label">Name</label>
+                      <div class="col-md-9">   
+                            <input type="text" class="form-control" name="title" id="title" required="required">
+                     </div>
+                 </div>
+                 
+                 <div class="form-group">
+                      <label for="slGenre" id="genre" class="col-md-3 control-label">Genre</label>
+                      <div class="col-md-9">   
+                        <select name="genre" id="genre_movie" class="form-control">
+                            <option value="Action">Action</option>
+                            <option value="Animation">Animation</option>
+                            <option value="Adventure">Adventure</option>
+                            <option value="Comedy">Comedy</option>
+                            <option value="Romantic comedy">Romantic comedy</option>
+                            <option value="Dance">Dance</option>
+                            <option value="Documentary">Documentary</option>
+                            <option value="Drama">Drama</option>
+                            <option value="Fantasy">Fantasy</option>
+                            <option value="Far west">Far west</option>
+                            <option value="Fiction">Fiction</option>
+                            <option value="War">War</option>
+                            <option value="Musical">Musical</option>
+                            <option value="Policial">Cop</option>
+                            <option value="Romance">Romance</option>
+                            <option value="Thriller">Thriller</option>
+                            <option value="Terror">Terror</option>
+                        </select>
+                     </div>
+                 </div>
+                 
+                 <div class="form-group">
+                     <label for="txLanguage" class="col-md-3 control-label">Language</label>
+                     <div class="col-md-9">   
+                        <input type="text" class="form-control" id="language" name="language"  required="required">
+                     </div>
+                 </div>
+                 
+                 <div class="form-group">
+                     <label for="nuYear" class="col-md-3 control-label">Year</label>
+                     <div class="col-md-9">   
+                        <input type="number" class="form-control" name="number" id="year" required="required" pattern="[0-9]+$">
+                     </div>
+                 </div>
+                 
+                 <div class="form-group">
+                     <label for="txSinopse" class="col-md-3 control-label">Sinopse</label>
+                     <div class="col-md-9">   
+                        <textarea name="txsinopse" id="sinopse" class="form-control" cols="80" rows="10" required="required"></textarea>
+                     </div>
+                 </div>
+                 
+                 <div class="form-group">
+                     <div class="col-md-9 col-md-offset-3">
+                        <div class="col-sm-3">   
+                            <input type="submit" class="btn btn-block btn-primary" value="Add">
+                        </div>
+                        <div class="col-sm-3">   
+                            <a class="btn btn-block btn-danger" href="index">Return</a>
+                        </div>                      
+                     </div>
+                 </div>                 
+             </form>  
+         </div>
+     </div>
+     
 </body>
 </html>

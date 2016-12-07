@@ -12,6 +12,16 @@ var moviesService = {
        callback(result.affectedRows); 
         });
         
+    },
+    
+    filter: function (nome, callback) {
+        connection.query('SELECT *, + FROM moviestb WHERE'
+                          + 'nome LIKE "%"?"%" OR ano LIKE "%"?"%" OR idioma LIKE "%"?"%" OR genero LIKE"%"?"%"'
+                          + 'ORDER BY id', [nome,nome,nome,nome], function (erro, results) {
+                              if(error) throw error;
+                              
+                              callback(results)
+                          });
     }
 }
 

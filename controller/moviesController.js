@@ -12,6 +12,15 @@ var moviesController = {
             }
         });
     },
+    filtrar: function (nome, response) {
+        moviesService.filter(nome, function callback (results) {
+            if(results){
+                response.status(200).send(status);
+            }else{
+                response.sendStatus(404);
+            }
+        })
+    }
 };
 
 module.exports = moviesController;

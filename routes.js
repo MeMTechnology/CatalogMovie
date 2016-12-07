@@ -23,11 +23,11 @@ var router = function (app) {
     });
     
     app.get("/success", function(request, response) {
-        response.sendFile(dir + "success.html");
+        response.sendFile(dir + "/sucess.html");
     });
 
     app.get("/failed", function(request, response) {
-        response.sendFile(dir + "failed.html");
+        response.sendFile(dir + "/failed.html");
     });
 }
 

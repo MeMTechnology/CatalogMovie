@@ -9,7 +9,7 @@ const app = express();
 
 var router = getmodule('routes');
 
-app.use(bodyParser.json());
+app.use(bodyParser());
 app.use(express.static("public"));
 
 router(app)

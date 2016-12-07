@@ -16,7 +16,7 @@ var moviesService = {
     
     filter: function (nome, callback) {    
         connection.query('SELECT * FROM moviestb WHERE '
-                         + 'nome LIKE "%'+ nome + '%" OR ano LIKE "%'+ nome +'%" OR idioma LIKE "%' + nome +'%" OR genero LIKE"% ' + nome +'%"'
+                         + 'nome LIKE "%'+ nome + '%" OR ano LIKE "%'+ nome +'%" OR idioma LIKE "%' + nome +'%" OR genero LIKE "%' + nome +'%"'
                          + 'ORDER BY cod', [nome,nome,nome,nome],function (error, results) {
                               if(error) throw error;
                             

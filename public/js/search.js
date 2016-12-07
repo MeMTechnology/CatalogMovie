@@ -32,7 +32,7 @@
                 columns += "<td>" + movies[i].ano + "</td>";
                 
                 columns += '<td class="actions">';
-                columns += '<a class="btn btn-danger btn-xs" href="/deletar/"' + movies[i].cod +'">Delete</a>';
+                columns += '<a class="btn btn-danger btn-xs" href="/deletar/' + movies[i].cod +'">Delete</a>';
                 columns += '</td>';
                 
                 newRow.append(columns);

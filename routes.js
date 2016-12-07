@@ -28,7 +28,7 @@ var router = function (app) {
     });
     
     app.get("/success", function(request, response) {
-        response.sendFile(dir + "/sucess.html");
+        response.sendFile(dir + "/index.html");
     });
 
     app.get("/failed", function(request, response) {

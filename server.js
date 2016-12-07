@@ -14,7 +14,7 @@ app.use(express.static("public"));
 
 router(app)
 
-const port = 5100;
+const port = 8080;
 const hostname = "localhost";
 
 app.listen(port, onStart());

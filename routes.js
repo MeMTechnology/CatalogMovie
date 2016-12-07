@@ -1,4 +1,5 @@
 const dir = __dirname + '/public/'
+const moviesController = require('./controller/moviesController.js');
 
 var router = function (app) {
     app.get('/', function (request, response) {
@@ -16,6 +17,18 @@ var router = function (app) {
     app.get('/index', function(request, response){
         response.sendFile(dir + '/index.html')
     })
+    
+     app.post("/cadastrar", function (request, response) {
+       moviesController.cadastrar(request.body, response);
+    });
+    
+    app.get("/success", function(request, response) {
+        response.sendFile(dir + "success.html");
+    });
+
+    app.get("/failed", function(request, response) {
+        response.sendFile(dir + "failed.html");
+    });
 }
 
 module.exports = router

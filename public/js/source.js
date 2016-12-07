@@ -43,5 +43,6 @@ function getMovieById(search) {
 	}
 	
 	}
-	doc.output('datauri');
+	
+	doc.output('dataurlnewwindow');
  }

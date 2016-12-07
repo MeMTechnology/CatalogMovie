@@ -20,6 +20,15 @@ var moviesController = {
                 response.sendStatus(404);
             }
         })
+    },
+    deletar: function (cod, response){
+        moviesService.delete(cod, function  callback (cod) {
+            if(cod){
+                response.redirect("/success");
+            }else{
+                response.redirect("/failed");
+            }
+        });
     }
 };
 

@@ -34,6 +34,11 @@ var router = function (app) {
     app.get("/failed", function(request, response) {
         response.sendFile(dir + "/failed.html");
     });
+    
+    app.get("/deletar/:cod", function (request, response){
+        let cod = request.params.cod;
+        moviesController.deletar(cod, response);
+    });
 }
 
 module.exports = router

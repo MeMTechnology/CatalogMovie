@@ -22,6 +22,13 @@ var moviesService = {
                             
                               callback(results)
                           });
+    },
+    delete: function (cod, callback) {
+        connection.query('DELETE FROM `moviestb` WHERE cod = ?', [cod], function (error, results) {
+            if (error) throw error;
+            
+            callback(results.affectedRows);
+        });
     }
 }
 

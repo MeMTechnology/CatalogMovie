@@ -10,7 +10,7 @@ var router = function (app) {
         response.sendFile(dir + '/searchScrenn.html')
     });
     
-    app.post('/searchScreen/:nome', function(request, response){
+    app.get('/searchScreen/:nome', function(request, response){
         let nome = request.params.nome;
         moviesController.filtrar(nome, response);
     });

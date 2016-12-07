@@ -15,7 +15,7 @@ var moviesController = {
     filtrar: function (nome, response) {
         moviesService.filter(nome, function callback (results) {
             if(results){
-                response.status(200).send(status);
+                response.status(200).send(results);
             }else{
                 response.sendStatus(404);
             }

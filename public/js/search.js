@@ -40,8 +40,7 @@
         return false;
     };
     
-    $("form").done("submit", event =>{
-        console.log("aqui");
+    $("form").on("submit", event =>{
         let search = $("#search").val();
         $("#tbMovies tr").remove();
         getMovieById(search);
